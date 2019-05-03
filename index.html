@@ -4,6 +4,12 @@
   <title>Bertrand Rothen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#header").load("header.html");
+})
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138661795-1"></script>
 <script>
@@ -15,33 +21,8 @@
 </script>
 </head>
 <body class="w-100 sans-serif">
-  <!-- Header -->
-  <header class="w-100 pa3 ph5-ns bg-white">
-    <div class="db dt-ns mw9 center w-100">
-      <!-- Name & Title -->
-      <div class="db dtc-ns v-mid tl w-50">
-        <a href="/" class="dib f5 f4-ns fw6 mt0 mb1 link black-70" title="Home">
-          Bertrand Rothen
-          <div class="dib">
-            <small class="nowrap f6 mt2 mt3-ns pr2 black-70 fw2">Freelance Digital Product Consultant</small>
-          </div>
-        </a>
-      </div>
-      <!-- Navigation -->
-      <nav class="db dtc-ns v-mid w-100 tl tr-ns mt2 mt0-ns">
-        <!--
-        <a title="Services" href="/docs/"
-            class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
-          Services
-        </a>
-        -->
-        <a title="Contact" href="/components/"
-            class="f6 fw6 hover-blue link black-70 mr2 mr3-m mr4-l dib">
-          Contact
-        </a>
-      </nav>
-    </div>
-  </header>
+
+<div id="header"></div>
 
   <main class="w-100 bt b--black-10 bg-white">
     <!-- Top Section -->
@@ -50,32 +31,62 @@
        <article class="pb0">
          <div class="ph3 ph5-ns">
             <div class="cf center tc-m">
-               <div class="pb0 pt4 pt5-ns mt4 black-70 w-100-l">
-                 <img class="fl cf w-30 w-20-ns" src="assets/pics/hero.png">
-                 <h1 class="f4 fw6 f1-ns lh-title measure mt0 mb2-l tr">
+               <div class="pb0 pt3 pt4-ns mt4 black-70 w-100-l">
+                 <img class="fr cf w-30 w-30-ns w-20-m pr6-l pr3-m" src="assets/pics/hero.png">
+                 <h1 class="f2 fw6 f1-ns f2-m lh-title measure mt0 mb2-l tl pb4-l">
                    Hi, I'm Bertrand.
                  </h1>
-                 <p class="f5 f4-ns fw4 dib-m lh-copy tr">
+                 <p class="f6 f4-ns f5-m fw4 lh-copy tl pb4-l">
                    I'm a <strong>Freelance Digital Product Consultant</strong>,
                    <br>currently located
                    in <strong>Hamburg, Germany</strong>.
                    <br>I also do Marketing, Audio Engineering
                    and Drumming.
                  </p>
-
                  <a
-                   class="f6 f5-ns fw6 db ba b--black-20 bg-blue white ph3 ph4-ns pv2 pv3-ns br2 grow no-underline fr"
+                   class="f6 f5-ns fw6 db ba b--black-20 bg-blue white ph3 ph4-ns ph2-m pv2 pv3-ns pv2-m br2 grow no-underline fl"
                    href="/contact/">
                    Contact Me
                  </a>
             </div>
         </div>
       </article>
+      <!-- Intro Article -->
+      <article class="bt b--black-10 bg-washed-blue black-70 ph3 ph4-ns pv4 pv5-ns cf">
+        <!-- Left Container - Images-->
+        <div class="mw6 fl">
+          <img class="pl0" src="assets/pics/app1.png">
+          <img class="pl5" src="assets/pics/app2.png">
+        </div>
+        <!-- Right Container - Text-->
+        <div class="mw6 fr">
+          <h1 class="f2 fw6 f1-ns f2-m lh-title measure mt0 mb2-l tr pb4-l">
+            Let me help you
+            improve your product.
+          </h1>
+          <p class="f6 f4-ns f5-m fw4 lh-copy tr pb4-l">
+            I can apply my experience as a <strong>product manager, online marketer</strong> and <strong>media producer</strong>
+            and my domain expertise in <strong>social media, advertising technology, online platforms,
+            conversion optimization, user & solution testing, full stack web applications, big
+            data</strong> and <strong>UX design (plus much more)</strong> to elevate your technology product offering.
+          </p>
+          <p class="f6 f4-ns f5-m fw4 lh-copy tr pb4-l">
+            <strong>Not sure what your users actually want or need?</strong>
+            <br>
+            Analyzing stakeholder & user needs, I can ideate, conceptualize and prototype possible solutions for your case.
+          </p>
+          <p class="f6 f4-ns f5-m fw4 lh-copy tr pb4-l">
+            <strong>Need support getting a plan implemented?</strong>
+            <br>
+            With ample experience in managing agile software development, I can guide your team to producing results quickly,
+            reacting to changes sensibly and .
+          </p>
+        </div>
+      </article>
       <!-- Clients Article -->
       <article class="bt b--black-10 bg-washed-green black-70 ph3 ph5-ns pv4 pv5-ns">
-        <div class="mw9 center">
-          <h1 class="mt0 f2">Clients</h1>
-            <p class="f5 measure lh-copy">
+          <h1 class="mt0 f2 tc">Clients</h1>
+            <p class="f5 measure lh-copy tc">
               Among others, I've worked for and with these great companies:
             </p>
             <div class="dt dt--fixed mw10 mw9-l center">
@@ -86,7 +97,6 @@
               <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="assets/logos/gigmit-logo.png"></div>
               <div class="dtc pa2 pa3-l"><img class="br2 db w-100" src="assets/logos/leap-logo.png"></div>
             </div>
-        </div>
       </article>
     </section>
   </main>
